@@ -5,8 +5,8 @@ service:
     ports: -32768:5432
     environments:
       POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: localhost
-      POSTGRES_DB: nest
+      POSTGRES_PASSWORD: postgrespw
+      POSTGRES_DB: mydb
     networks:
       - freecodecamp
 networks:

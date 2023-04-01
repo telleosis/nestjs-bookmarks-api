@@ -84,3 +84,7 @@ Nest is [MIT licensed](LICENSE).
 - docker compose up dev-db -d
 - npm add -D prisma
 - npm add @prisma/client
+- npx prisma init
+- prisma migrate dev //supply init as migration name
+- nest g module prisma
+- nest g service prisma --no-spec //no spec flag to NOT create test dir for this
