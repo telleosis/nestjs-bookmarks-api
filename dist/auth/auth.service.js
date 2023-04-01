@@ -9,9 +9,15 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.AuthService = void 0;
 const common_1 = require("@nestjs/common");
 let AuthService = class AuthService {
+    signup() {
+        return { msg: 'I have signed up' };
+    }
+    signin() {
+        return { msg: 'I have signin in' };
+    }
 };
 AuthService = __decorate([
-    (0, common_1.Injectable)()
+    (0, common_1.Injectable)({})
 ], AuthService);
 exports.AuthService = AuthService;
 //# sourceMappingURL=auth.service.js.map
