@@ -74,6 +74,8 @@ Nest is [MIT licensed](LICENSE).
 
 ## Dev Notes
 
+## https://www.youtube.com/watch?v=GHTA143_b-s
+
 - nest new nestjs-api-tutorial
 - cd nestjs-api-tutorial/
 - npm run start:dev
@@ -82,9 +84,13 @@ Nest is [MIT licensed](LICENSE).
 - nest g module bookmark
 - Install Docker Desktop
 - docker compose up dev-db -d
-- npm add -D prisma
+- docker ps //checks if docker is running
+- docker logs // checks logs
+- npm add -D prisma //to create prisma schema
 - npm add @prisma/client
-- npx prisma init
-- prisma migrate dev //supply init as migration name
+- npx prisma init //will automatically generate the .env file
+- //We create the prisma models first to define all our models before running migrate dev
+- //prisma migrate dev will read what we defined in our prisma schema and generate the DB
+- prisma migrate dev //supply init as migration name if it asks
 - nest g module prisma
 - nest g service prisma --no-spec //no spec flag to NOT create test dir for this
